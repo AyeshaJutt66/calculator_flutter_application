@@ -325,7 +325,7 @@ class _LandscapeLayoutState extends State<LandscapeLayout> {
                       ),
                       ButtonWidget(
                         height: 50,
-                        width: 270,
+                        width: 210,
                         color: Colors.yellow,
                         textColor: Colors.black,
                         buttonText: "=",
