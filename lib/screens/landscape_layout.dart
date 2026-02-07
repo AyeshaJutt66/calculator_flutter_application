@@ -297,7 +297,7 @@ class _LandscapeLayoutState extends State<LandscapeLayout> {
                         height: 50,
                         width: 70,
                         color: Colors.teal,
-                        textColor: Colors.black,
+                        textColor: Colors.white,
                         buttonText: '+',
                         onPressed: () => onPressedButton('+'),
                       ),
