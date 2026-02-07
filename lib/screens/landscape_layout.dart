@@ -113,228 +113,231 @@ class _LandscapeLayoutState extends State<LandscapeLayout> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Expanded(
-            flex: 3,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                const SizedBox(height: 50),
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  alignment: Alignment.bottomLeft,
-                  child: Text(
-                    userInput,
-                    style: const TextStyle(fontSize: 30),
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  alignment: Alignment.bottomRight,
-                  child: Text(
-                    result,
-                    style: const TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
+      child: Container(
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Expanded(
+              flex: 3,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const SizedBox(height: 50),
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    alignment: Alignment.bottomLeft,
+                    child: Text(
+                      userInput,
+                      style: const TextStyle(fontSize: 30,color: Colors.black),
                     ),
                   ),
-                ),
-              ],
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    alignment: Alignment.bottomRight,
+                    child: Text(
+                      result,
+                      style: const TextStyle(
+                        fontSize: 30,color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
 
-          Expanded(
-            flex: 7,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-               Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.teal,
-                      textColor: Colors.white,
-                      buttonText: 'AC',
-                      onPressed: () => onPressedButton('AC'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.teal,
-                      textColor: Colors.white,
-                      buttonText: 'DEL',
-                      onPressed: () => onPressedButton('DEL'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.teal,
-                      textColor: Colors.white,
-                      buttonText: '%',
-                      onPressed: () => onPressedButton('%'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.teal,
-                      textColor: Colors.white,
-                      buttonText: '/',
-                      onPressed: () => onPressedButton('/'),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-                  children: [
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '9',
-                      onPressed: () => onPressedButton('9'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '8',
-                      onPressed: () => onPressedButton('8'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '7',
-                      onPressed: () => onPressedButton('7'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.teal,
-                      textColor: Colors.white,
-                      buttonText: 'x',
-                      onPressed: () => onPressedButton('x'),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-                  children: [
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '6',
-                      onPressed: () => onPressedButton('6'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '5',
-                      onPressed: () => onPressedButton('5'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '4',
-                      onPressed: () => onPressedButton('4'),
-                    ),
-                    ButtonWidget(
+            Expanded(
+              flex: 7,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                 Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ButtonWidget(
                         height: 50,
                         width: 70,
                         color: Colors.teal,
                         textColor: Colors.white,
-                        buttonText: '-',
-                        onPressed: () => onPressedButton('-')
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        buttonText: 'AC',
+                        onPressed: () => onPressedButton('AC'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.teal,
+                        textColor: Colors.white,
+                        buttonText: 'DEL',
+                        onPressed: () => onPressedButton('DEL'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.teal,
+                        textColor: Colors.white,
+                        buttonText: '%',
+                        onPressed: () => onPressedButton('%'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.teal,
+                        textColor: Colors.white,
+                        buttonText: '/',
+                        onPressed: () => onPressedButton('/'),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                  children: [
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '3',
-                      onPressed: () => onPressedButton('3'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '2',
-                      onPressed: () => onPressedButton('2'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '1',
-                      onPressed: () => onPressedButton('1'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.teal,
-                      textColor: Colors.black,
-                      buttonText: '+',
-                      onPressed: () => onPressedButton('+'),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '9',
+                        onPressed: () => onPressedButton('9'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '8',
+                        onPressed: () => onPressedButton('8'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '7',
+                        onPressed: () => onPressedButton('7'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.teal,
+                        textColor: Colors.white,
+                        buttonText: 'x',
+                        onPressed: () => onPressedButton('x'),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                  children: [
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '0',
-                      onPressed: () => onPressedButton('0'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 70,
-                      color: Colors.white,
-                      textColor: Colors.black,
-                      buttonText: '.',
-                      onPressed: () => onPressedButton('.'),
-                    ),
-                    ButtonWidget(
-                      height: 50,
-                      width: 270,
-                      color: Colors.yellow,
-                      textColor: Colors.black,
-                      buttonText: "=",
-                      onPressed: () => onPressedButton('='),
-                    ),
-                  ],
-                ),
-              ],
+                    children: [
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '6',
+                        onPressed: () => onPressedButton('6'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '5',
+                        onPressed: () => onPressedButton('5'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '4',
+                        onPressed: () => onPressedButton('4'),
+                      ),
+                      ButtonWidget(
+                          height: 50,
+                          width: 70,
+                          color: Colors.teal,
+                          textColor: Colors.white,
+                          buttonText: '-',
+                          onPressed: () => onPressedButton('-')
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                    children: [
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '3',
+                        onPressed: () => onPressedButton('3'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '2',
+                        onPressed: () => onPressedButton('2'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '1',
+                        onPressed: () => onPressedButton('1'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.teal,
+                        textColor: Colors.black,
+                        buttonText: '+',
+                        onPressed: () => onPressedButton('+'),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                    children: [
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '0',
+                        onPressed: () => onPressedButton('0'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 70,
+                        color: Colors.white,
+                        textColor: Colors.black,
+                        buttonText: '.',
+                        onPressed: () => onPressedButton('.'),
+                      ),
+                      ButtonWidget(
+                        height: 50,
+                        width: 270,
+                        color: Colors.yellow,
+                        textColor: Colors.black,
+                        buttonText: "=",
+                        onPressed: () => onPressedButton('='),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
